@@ -22,13 +22,13 @@ repos:
   - id: black
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.16.1
+  rev: v0.16.6
   hooks:
     - id: ruff-check
       args: [--fix]
 
 - repo: https://github.com/pre-commit/mirrors-mypy
-  rev: v2.3.0
+  rev: v2.3.1
   hooks:
   - id: mypy
     exclude: tests/data
@@ -67,7 +67,7 @@ repos:
       args: ["--ignore-words", tools/codespell-ignore.txt]
 
 - repo: https://github.com/zizmorcore/zizmor-pre-commit
-  rev: v1.29.0
+  rev: v1.30.0
   hooks:
   - id: zizmor
     args: ["--fix=all"]
